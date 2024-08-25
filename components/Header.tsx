@@ -105,8 +105,8 @@ const Header: React.FC = () => {
           <Link href="https://github.com/1MRaju" target='_blank'>
             <Image
                src={scrolling 
-                ? './icons8=github-48.png' 
-                : './icons8=github-48.png'} 
+                ? '/icons8=github-48.png' 
+                : '/icons8=github-48.png'} 
               alt="" 
             className='GitHub'
             width={80} height={80} />

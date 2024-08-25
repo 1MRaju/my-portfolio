@@ -4,19 +4,19 @@ const projects = [
     {
       title: 'Project 1',
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolorum libero quaerat repudiandae!',
-      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToy2qrV6hKoUYK6r-BnH7HKk-WWWZNXBpT-w&s',
+      imageUrl: '',
       caseStudyUrl: '#'
     },
     {
       title: 'Project 2',
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolorum libero quaerat repudiandae!',
-      imageUrl: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=pexels-kevin-ku-92347-577585.jpg&fm=jpg',
+      imageUrl: '',
       caseStudyUrl: 'https://github.com/NoahGdev/LiquidTools',
     },
     {
       title: 'Project 3',
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolorum libero quaerat repudiandae!',
-      imageUrl: 'https://miro.medium.com/v2/resize:fit:800/1*cQAZ2YrXqmmrsKMFM4-oMw.jpeg',
+      imageUrl: '',
       caseStudyUrl: 'https://github.com/NoahGdev/LiquidTools',
     }
   ];
@@ -41,7 +41,7 @@ const projects = [
             {projects.map((project) => (
               <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] border border-text3">
                 <div className="flex-shrink-0">
-                  <Image className="h-48 w-full object-cover" src={project.imageUrl} alt={project.title} />
+                  <Image className="h-48 w-full object-cover" src={project.imageUrl} alt={project.title} width={100}  height={100}/>
                 </div>
                 <div className="flex-1 bg-transparent p-6 flex flex-col justify-between pw-bg">
                   <div className="flex-1">

@@ -18,7 +18,7 @@ const About:React.FC = () => {
      </svg> */}
 
         <div className='w-[40%] flex flex-col items-center justify-around shadow pb-3 ml-16 '>
-            <Image src="/my-img.png" alt="" className='w-[90%]  drop-shadow-2xl brightness-90 filter hue-rotate-15 contrast-125 saturate-100'/>
+            <Image src="/myimg.png" alt="my-image" width={100} height={100} className='w-[90%]  drop-shadow-2xl brightness-90 filter hue-rotate-15 contrast-125 saturate-100 h-auto'/>
             <button className="bg-white font-bold px-6 py-3 rounded-md w-[70%] shadow-xl tracking-widest text-xl ">
             <Link href='https://resume.io/r/kpSyznSzv' target='_blank'>
               Download Resume
@@ -28,7 +28,7 @@ const About:React.FC = () => {
         <div className='w-[60%] flex flex-col items-center justify-between'>
            <div className='p-10 mb-5 w-[100%] shadow'>
              <h2 className='font-extrabold text-4xl text-text2 tracking-widest mb-14' >About Me</h2>
-             <p className='text-text1 tracking-wider leading-10'>🌟 Hello! I'm <strong>Raju Mudavath</strong>, a passionate Frontend Developer with a knack for crafting sleek, responsive websites using JavaScript, TailwindCSS, and ReactJS. With hands-on experience in Next.js, Redux, and a solid backend foundation in Node.js, Express.js, and MongoDB, I bring a full-stack perspective to every project. Let's build something amazing together!.</p>
+             <p className='text-text1 tracking-wider leading-10'>Hello! I'm <strong>Raju Mudavath</strong>, a passionate Frontend Developer with a knack for crafting sleek, responsive websites using JavaScript, TailwindCSS, and ReactJS. With hands-on experience in Next.js, Redux, and a solid backend foundation in Node.js, Express.js, and MongoDB, I bring a full-stack perspective to every project. Let's build something amazing together!.</p>
            </div>
            <div className=' p-5 px-12 -mt-5 -ml-10 w-[65%] rounded-xl shadow-2xl bg-black border border-text3 '>
            <h2 className='font-bold text-center text-3xl text-text3 pb-5 tracking-widest '>Personal Information</h2>
