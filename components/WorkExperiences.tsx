@@ -29,7 +29,7 @@ interface TimelineItemProps {
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ experience, side }) => {
   return (
-    <div className={`relative rounded-md w-full bg-black my-6 border border-text3 ${side === 'right' ? 'md:ml-auto' : 'md:mr-auto'} md:w-2/5 ${side === 'right' ? 'timeline-bg1' : 'timeline-bg2'}`}>
+    <div className={`relative rounded-md w-full bg-black my-6 shadow-lg shadow-slate-700 border border-slate-600 ${side === 'right' ? 'md:ml-auto' : 'md:mr-auto'} md:w-2/5 ${side === 'right' ? 'timeline-bg1' : 'timeline-bg2'}`}>
       <div className={`bg-transparent rounded-lg p-6  tracking-wider text-center md:text-left`}>
         <h3 className="text-xl text-text3 font-semibold mb-2 tracking-wider">{experience.role}</h3>
         <h4 className="text-text3 mb-4">{experience.company}</h4>
@@ -46,7 +46,7 @@ const WorkExperiences: React.FC = () => {
       <h2 className="text-4xl mb-10 md:mb-20 text-center text-text2 tracking-widest font-extrabold">Work Experience</h2>
       <div className="container mx-auto px-6">
         <div className="relative w-full ">
-          <div className="hidden md:block border-l-2 absolute left-1/2 transform -translate-x-1/2 bg-text3 h-full"></div>
+          <div className="hidden md:block border-l-2 border-slate-600 absolute left-1/2 transform -translate-x-1/2 bg-text3 h-full"></div>
           {experiences.map((experience, index) => (
             <TimelineItem
               key={experience.id}

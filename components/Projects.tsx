@@ -59,7 +59,7 @@ const projects = [
           <div className=" grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
             {projects.map((project) => (
-              <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] border border-text3 p-5">
+              <div key={project.title} className="flex flex-col rounded-lg  overflow-hidden bg-[#0a0a0a] p-5 shadow-lg shadow-slate-800 border border-slate-600">
                 <div className="flex-shrink-0">
                   <Image className=" h-[80px] md:h-[100px] w-full object-contain" src={project.imageUrl} alt={project.title} width={100}  height={100}/>
                 </div>

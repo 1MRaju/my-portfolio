@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
   return (
     <div id='contact' className=' py-16 '>
         <h2 className="text-4xl mb-8 md:mb-16  font-extrabold tracking-widest  text-text2 text-center px-5">Connect me via my Socials below! ✨</h2>
-        <div className=" p-8 rounded-lg shadow-lg text1 w-[90%] md:max-w-4xl mx-auto mt-8 cc-bg blur-background bg-black border border-text3">
+        <div className=" p-8 rounded-lg shadow-lg text1 w-[90%] md:max-w-4xl mx-auto mt-8 cc-bg blur-background bg-black shadow-slate-600 border border-slate-600">
             <div className="flex justify-around items-center gap-6 flex-col md:flex-row">
                 <div className=' flex md:flex flex-col items-center justify-between'>
                     <h2 className="text-xl md:text-3xl text-text3 font-bold mb-2 tracking-[7px] text-center">RAJU MUDAVATH</h2>
