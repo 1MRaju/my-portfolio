@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
         <Link href="/" 
         className={`text-4xl font-extrabold
-         ${scrolling ? 'text-black text-5xl' : 'text-text3'}
+         ${scrolling ? 'text-black md:text-5xl' : 'text-text3'}
           underline tracking-[5px]`}>
           MYpoRtFoLio
         </Link>
@@ -53,16 +53,11 @@ const Header: React.FC = () => {
           
           <ButtonLink 
           className={`text-xl font-bold tracking-widest  ${scrolling ? 'text-black' : 'text-text3'} `} buttonText='Contact' elementId='contact'/>
-{/* 
-          <Link className="text-xl font-bold  text-gray-800 "  href='#hero'>Home</Link>
-          <Link className="text-xl font-bold  text-gray-800 "  href='#about'>About</Link>
-          <Link className="text-xl font-bold  text-gray-800 "  href='#experiences'>Experience</Link>
-          <Link className="text-xl font-bold  text-gray-800 "  href='#projects'>Projects</Link>
-          <Link className="text-xl font-bold  text-gray-800 "  href='#contact'>Contact</Link> */}
         </div>
+        
         <div className="flex space-x-4">
           <button
-            className="md:hidden"
+            className="md:hidden bg-white"
             onClick={toggleMobileMenu}
           >
             <svg
@@ -87,26 +82,20 @@ const Header: React.FC = () => {
           </Link>
         </div>
       </nav>
-      <div className={`md:hidden ${mobileMenuOpen ? 'flex' : 'hidden'} justify-between mt-4 mb-6 ml-5`}>
-        <div className="flex flex-col space-y-4">
+
+      <div className={`md:hidden ${mobileMenuOpen ? 'flex' : 'hidden'} justify-between mt-4 mb-6 ml-5 bg-white`}>
+        <div className="flex flex-col space-y-4 p-10">
           <ButtonLink className="text-left text-lg font-medium text-gray-800 " buttonText='Home' elementId='hero'/>
           <ButtonLink className="text-left text-lg font-medium text-gray-800 " buttonText='About' elementId='about'/>
           <ButtonLink className="text-left text-lg font-medium text-gray-800 " buttonText='Experience' elementId='experiences'/>
           <ButtonLink className="text-left text-lg font-medium text-gray-800 " buttonText='Projects' elementId='projects'/>
           <ButtonLink className="text-left text-lg font-medium text-gray-800 " buttonText='Contact' elementId='contact'/>
-
-{/* <Link className="text-left text-lg font-medium text-gray-800 " href='hero'>Home</Link>
-          <Link className="text-left text-lg font-medium text-gray-800 "  href ='#about'>About</Link>
-          <Link className="text-left text-lg font-medium text-gray-800 "  href ='#experiences'>Experience</Link>
-          <Link className="text-left text-lg font-medium text-gray-800 "  href ='#projects'>Project</Link>
-          <Link className="text-left text-lg font-medium text-gray-800 "  href ='#contact'>Contact</Link> */}
         </div>
-        <div className="flex items-center mt-20 mr-4">
+
+        <div className="flex items-start mt-8 mr-6">
           <Link href="https://github.com/1MRaju" target='_blank'>
             <Image
-               src={scrolling 
-                ? '/icons8=github-48.png' 
-                : '/icons8=github-48.png'} 
+               src='/icons8-github-96.png'
               alt="" 
             className='GitHub'
             width={80} height={80} />

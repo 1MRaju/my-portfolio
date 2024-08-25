@@ -2,48 +2,68 @@ import Image from "next/image";
 
 const projects = [
     {
-      title: 'Project 1',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolorum libero quaerat repudiandae!',
-      imageUrl: '',
-      caseStudyUrl: '#'
+      title: 'Grocery Ecommerce App',
+      description: 'Developed an e-commerce grocery platform with Next.js for the frontend and Strapi CMS for the backend.',
+      imageUrl: '/groceryapp.png',
+      caseStudyUrl: 'https://github.com/1MRaju/grocery-next'
     },
     {
-      title: 'Project 2',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolorum libero quaerat repudiandae!',
-      imageUrl: '',
-      caseStudyUrl: 'https://github.com/NoahGdev/LiquidTools',
+      title: 'BloodBank Management System',
+      description: 'Developed a comprehensive blood bank management system utilizing the MERN stack to streamline operations and improve data management.',
+      imageUrl: '/bloodbank-app1.png',
+      caseStudyUrl: 'https://github.com/1MRaju/MERN-Projects/tree/main/FinalProject-using-MERN',
     },
     {
-      title: 'Project 3',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolorum libero quaerat repudiandae!',
-      imageUrl: '',
-      caseStudyUrl: 'https://github.com/NoahGdev/LiquidTools',
+      title: 'Currency Converter',
+      description: 'Created a currency converter application using JavaScript, CSS, and HTML to facilitate real-time currency exchanges.',
+      imageUrl: '/currency-conversion.png',
+      caseStudyUrl: 'https://1mraju.github.io/Currency_converter_Javascript/',
+    },
+    {
+      title: 'Login & Registration System',
+      description: 'Developed a user login and registration system using the MERN stack to manage secure authentication and user data',
+      imageUrl: '/login-registration.png',
+      caseStudyUrl: 'https://github.com/1MRaju/user-login-register-system',
+    },
+    {
+      title: 'Ecommerce Application',
+      description: 'Built a React-based e-commerce application utilizing Faker.js to dynamically generate and display fake product data',
+      imageUrl: '/online-shop.png',
+      caseStudyUrl: 'https://github.com/1MRaju/React-Projects/tree/main/E-Commerce',
+    },
+    {
+      title: 'Zomato page cloned',
+      description: 'Cloned a Zomato page using HTML and CSS to replicate its design and layout.',
+      imageUrl: '/zomato.webp',
+      caseStudyUrl: 'https://1mraju.github.io/Zomato-Webpage/',
+    },
+    {
+      title: 'Add to Cart',
+      description: 'Created Add to Cart functionality using Html, css and Javascript.',
+      imageUrl: '/addcart.png',
+      caseStudyUrl: 'https://1mraju.github.io/addtocart-js/',
+    },
+    {
+      title: 'Seven Mentor clone',
+      description: 'Created a Clone of Seven Mentors page using HTML and CSS.',
+      imageUrl: '/sevenmentor.png',
+      caseStudyUrl: 'https://1mraju.github.io/sevenMentor-clone/',
     }
   ];
 
   const Projects: React.FC = () => {
     return (
-      <div id='projects' className="bg-transparent text-white py-16 ">
-      {/* <svg className="absolute right-0 top-0  z-[-1]" viewBox="0 0 800 800">
-        <defs>
-            <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feGaussianBlur stdDeviation="73" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur>
-            </filter>
-        </defs>
-        <g filter="url(#bbblurry-filter)">
-            <ellipse rx="127.5" ry="144.5" cx="158.48854527148316" cy="63.1451261127883" fill="hsla(286, 59%, 10%, 1.00)"></ellipse>
-        </g>
-      </svg> */}
+      <div id='projects' className="bg-transparent text-white py-8 md:py-16 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-extrabold tracking-widest text-center mb-20 text-text2">My Projects</h2>
+          <h2 className="text-4xl font-extrabold tracking-widest text-center mb-10 md:mb-20 text-text2">My Projects</h2>
           <div className=" grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
             {projects.map((project) => (
-              <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] border border-text3">
+              <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] border border-text3 p-5">
                 <div className="flex-shrink-0">
-                  <Image className="h-48 w-full object-cover" src={project.imageUrl} alt={project.title} width={100}  height={100}/>
+                  <Image className="h-48 w-full object-contain" src={project.imageUrl} alt={project.title} width={100}  height={100}/>
                 </div>
-                <div className="flex-1 bg-transparent p-6 flex flex-col justify-between pw-bg">
+                <div className="flex-1 bg-transparent p-6 flex flex-col justify-between pw-bg text-center">
                   <div className="flex-1">
                     {project.caseStudyUrl !== '#' ? (
                       <a href={project.caseStudyUrl} target='_blank' rel='noopener noreferrer'>
