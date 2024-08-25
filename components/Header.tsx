@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ButtonLink } from './Scroller';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
 
@@ -77,7 +78,7 @@ const Header: React.FC = () => {
             </svg>
           </button>
           <Link href="https://github.com/1MRaju" target='_blank' className="hidden md:flex">
-            <img 
+            <Image
              src={scrolling 
                   ? '/icons8-github-96.png' 
                   : '/icons8-github-96.png'} 
@@ -102,7 +103,7 @@ const Header: React.FC = () => {
         </div>
         <div className="flex items-center mt-20 mr-4">
           <Link href="https://github.com/1MRaju" target='_blank'>
-            <img 
+            <Image
                src={scrolling 
                 ? './icons8=github-48.png' 
                 : './icons8=github-48.png'} 

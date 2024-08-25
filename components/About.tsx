@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -17,7 +18,7 @@ const About:React.FC = () => {
      </svg> */}
 
         <div className='w-[40%] flex flex-col items-center justify-around shadow pb-3 ml-16 '>
-            <img src="/my-img.png" alt="" className='w-[90%]  drop-shadow-2xl brightness-90 filter hue-rotate-15 contrast-125 saturate-100'/>
+            <Image src="/my-img.png" alt="" className='w-[90%]  drop-shadow-2xl brightness-90 filter hue-rotate-15 contrast-125 saturate-100'/>
             <button className="bg-white font-bold px-6 py-3 rounded-md w-[70%] shadow-xl tracking-widest text-xl ">
             <Link href='https://resume.io/r/kpSyznSzv' target='_blank'>
               Download Resume

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const projects = [
     {
       title: 'Project 1',
@@ -39,7 +41,7 @@ const projects = [
             {projects.map((project) => (
               <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] border border-text3">
                 <div className="flex-shrink-0">
-                  <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.title} />
+                  <Image className="h-48 w-full object-cover" src={project.imageUrl} alt={project.title} />
                 </div>
                 <div className="flex-1 bg-transparent p-6 flex flex-col justify-between pw-bg">
                   <div className="flex-1">
