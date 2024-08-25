@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const projects = [
     {
-      title: 'Grocery Ecommerce App',
+      title: 'Grocery E-Commerce App',
       description: 'Developed an e-commerce grocery platform with Next.js for the frontend and Strapi CMS for the backend.',
       imageUrl: '/groceryapp.png',
       caseStudyUrl: 'https://github.com/1MRaju/grocery-next'
     },
     {
-      title: 'BloodBank Management System',
+      title: 'Blood Management System',
       description: 'Developed a comprehensive blood bank management system utilizing the MERN stack to streamline operations and improve data management.',
       imageUrl: '/bloodbank-app1.png',
       caseStudyUrl: 'https://github.com/1MRaju/MERN-Projects/tree/main/FinalProject-using-MERN',
@@ -26,7 +26,7 @@ const projects = [
       caseStudyUrl: 'https://github.com/1MRaju/user-login-register-system',
     },
     {
-      title: 'Ecommerce Application',
+      title: 'E-Commerce Application',
       description: 'Built a React-based e-commerce application utilizing Faker.js to dynamically generate and display fake product data',
       imageUrl: '/online-shop.png',
       caseStudyUrl: 'https://github.com/1MRaju/React-Projects/tree/main/E-Commerce',
@@ -61,22 +61,22 @@ const projects = [
             {projects.map((project) => (
               <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] border border-text3 p-5">
                 <div className="flex-shrink-0">
-                  <Image className="h-48 w-full object-contain" src={project.imageUrl} alt={project.title} width={100}  height={100}/>
+                  <Image className=" h-[80px] md:h-[100px] w-full object-contain" src={project.imageUrl} alt={project.title} width={100}  height={100}/>
                 </div>
-                <div className="flex-1 bg-transparent p-6 flex flex-col justify-between pw-bg text-center">
+                <div className="flex-1 bg-transparent  flex flex-col justify-between pw-bg text-center">
                   <div className="flex-1">
                     {project.caseStudyUrl !== '#' ? (
                       <a href={project.caseStudyUrl} target='_blank' rel='noopener noreferrer'>
                         <div className="block mt-2">
                           <p className="text-xl font-semibold text-text3 tracking-wider">{project.title}</p>
-                          <p className="mt-3 text-base text-text3 tracking-widest">{project.description}</p>
+                          <p className="mt-3 text-sm leading-6 text-text1 font-thin tracking-wider ">{project.description}</p>
                         </div>
                       </a>
                     ) : (
                       <a>
                         <div className="block mt-2">
                           <p className="text-xl font-semibold text-text3 tracking-wider">{project.title}</p>
-                          <p className="mt-3 text-base text-text3 tracking-widest">{project.description}</p>
+                          <p className="mt-3 text-sm text-text1 font-thin leading-4 tracking-wider">{project.description}</p>
                         </div>
                       </a>
                     )}
