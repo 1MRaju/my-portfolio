@@ -3,6 +3,13 @@ import React from 'react';
 const experiences = [
   {
     id: 1,
+    role: 'Associate Software Engineer',
+    company: 'Consociate Solutions Pvt Ltd',
+    date: '14-Feb-2024 to 31-July-2024',
+    description:`As an Associate Software Engineer at Consociate Solutions Pvt. Ltd., I focused on creating intuitive and engaging user interfaces. This role enhanced my development skills and prepared me for advanced challenges in the tech industry.`,
+  },
+  {
+    id: 2,
     role: 'Fullstack Web Developer Intern',
     company: 'Seven Mentors & Training Pvt Ltd',
     date: '04-May-2023 to 31-Oct-2023',
@@ -12,13 +19,6 @@ Express, Node.js, and MongoDB to build impactful
 projects. This experience not only enhanced my
 technical abilities but also prepared me to excel in
 the industry`,
-  },
-  {
-    id: 2,
-    role: 'Associate Software Engineer',
-    company: 'Consociate Solutions Pvt Ltd',
-    date: '14-Feb-2024 to 31-July-2024',
-    description:`As an Associate Software Engineer at Consociate Solutions Pvt. Ltd., I focused on creating intuitive and engaging user interfaces. This role enhanced my development skills and prepared me for advanced challenges in the tech industry.`,
   }
 ];
 
