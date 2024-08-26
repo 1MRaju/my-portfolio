@@ -43,12 +43,12 @@ const projects = [
       imageUrl: '/addcart.png',
       caseStudyUrl: 'https://1mraju.github.io/addtocart-js/',
     },
-    {
-      title: 'Seven Mentor clone',
-      description: 'Created a Clone of Seven Mentors page using HTML and CSS.',
-      imageUrl: '/sevenmentor.png',
-      caseStudyUrl: 'https://1mraju.github.io/sevenMentor-clone/',
-    }
+    // {
+    //   title: 'Seven Mentor clone',
+    //   description: 'Created a Clone of Seven Mentors page using HTML and CSS.',
+    //   imageUrl: '/sevenmentor.png',
+    //   caseStudyUrl: 'https://1mraju.github.io/sevenMentor-clone/',
+    // }
   ];
 
   const Projects: React.FC = () => {
