@@ -29,7 +29,7 @@ const projects = [
       title: 'E-Commerce Application',
       description: 'Built a React-based e-commerce application utilizing Faker.js to dynamically generate and display fake product data',
       imageUrl: '/online-shop.png',
-      caseStudyUrl: 'https://github.com/1MRaju/React-Projects/tree/main/E-Commerce',
+      caseStudyUrl: 'https://ecommerce-react-navy-eight.vercel.app/',
     },
     {
       title: 'Zomato page cloned',
