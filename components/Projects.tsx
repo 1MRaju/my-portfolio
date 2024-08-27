@@ -43,6 +43,12 @@ const projects = [
       imageUrl: '/addcart.png',
       caseStudyUrl: 'https://1mraju.github.io/addtocart-js/',
     },
+    {
+      title: 'To Do List',
+      description: 'Created basic ToDoList functionality using React.',
+      imageUrl: '/todolist.png',
+      caseStudyUrl: 'https://todolist-react-theta-plum.vercel.app/',
+    }
     // {
     //   title: 'Seven Mentor clone',
     //   description: 'Created a Clone of Seven Mentors page using HTML and CSS.',
