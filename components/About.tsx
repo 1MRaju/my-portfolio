@@ -13,7 +13,7 @@ const About:React.FC = () => {
         <div className='w-[90%] md:w-[40%] flex flex-col items-center justify-center shadow -mt-20 mb-6'>
             <Image src="/myimg.png" alt="my-image" width={100} height={100} className='w-[80%]  drop-shadow-2xl brightness-90 filter hue-rotate-15 contrast-125 saturate-100'/>
             <button className="bg-white font-bold px-4 py-2 md:px-6 md:py-3 rounded-md w-[70%] shadow-xl tracking-widest text-lg md:text-xl shadow-slate-600 ">
-            <Link href='https://resume.io/r/kpSyznSzv' target='_blank'>
+            <Link href='https://drive.google.com/file/d/1CriL7zs0kZMJfFBHBU9VKvZNaawN7K_J/view?usp=drive_link' target='_blank'>
               Download Resume
             </Link>
             </button> 

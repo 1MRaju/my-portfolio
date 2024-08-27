@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
                     <h2 className="text-xl md:text-3xl text-text3 font-bold mb-2 tracking-[7px] text-center">RAJU MUDAVATH</h2>
                     <p className="text-sm  text-text1 mb-4 tracking-widest font-thin">Frontend Web Developer</p>
                     <button className="bg-white border text-black font-bold tracking-widest px-4 py-2 rounded shadow  transition-colors duration-200">
-                        <Link href='https://drive.google.com/file/d/1n8jrAAHwB9ju6Et-1VP4CEJzYTuKR6xo/view?usp=drive_link' target='_blank'>
+                        <Link href='https://drive.google.com/file/d/1CriL7zs0kZMJfFBHBU9VKvZNaawN7K_J/view?usp=drive_link' target='_blank'>
                             Resume
                         </Link>
                     </button>

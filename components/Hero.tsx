@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-5">
           <ButtonLink className="bg-white text-black tracking-widest font-bold  px-10 py-3 rounded-md text-lg" buttonText='Previous Work' elementId='experiences'/>
           <button className="bg-black border border-white text-text1 font-semibold px-16 py-3 rounded-md">
-            <Link href='https://drive.google.com/file/d/1n8jrAAHwB9ju6Et-1VP4CEJzYTuKR6xo/view?usp=drive_link' target='_blank' className='tracking-widest text-lg'>
+            <Link href='https://drive.google.com/file/d/1CriL7zs0kZMJfFBHBU9VKvZNaawN7K_J/view?usp=drive_link' target='_blank' className='tracking-widest text-lg'>
               Resume
             </Link>
           </button>
